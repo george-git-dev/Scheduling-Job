@@ -33,3 +33,10 @@ for (i = 0; i < Job.length; i++) {//Laço for para percorrer todos os itens do a
         
     }
 }
+
+//Método sort() para ordenar os elementos de um array
+Job.sort(function (a, b) {
+    let dateA = new Date(a.DataMaxima),
+        dateB = new Date(b.DataMaxima);
+    return dateA - dateB;
+});
