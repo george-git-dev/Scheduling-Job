@@ -40,3 +40,23 @@ Job.sort(function (a, b) {
         dateB = new Date(b.DataMaxima);
     return dateA - dateB;
 });
+
+
+// Laço for para imprimir os ID's 
+let count = 0;
+console.log();
+console.log('Output ID´s');
+for (i = 0; i < Job.length; i++) {
+
+    count = count + Job[i].tempo;
+    let ids = Job[i].ID    
+    console.log(ids);
+    
+    if (count == 8) {
+        /*Pula uma linha*/
+        console.log();
+        count = 0;
+    }
+    
+}
+
